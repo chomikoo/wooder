@@ -1,7 +1,7 @@
+![Page header](./img/screenshot.png)
+
 # Project Name
 Website coding practice
-
-(./img/screenshot.png)
 
 ## Table of contents
 * [General info](#general-info)
