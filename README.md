@@ -1,12 +1,12 @@
 # Project Name
-Website codding practice
+Website coding practice
+
+(./img/screenshot.png)
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
-
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
@@ -14,8 +14,6 @@ Website codding practice
 PSD 2 HTML excercising
 Designed by Viacheslav Olianishyn
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
 
 ## Technologies
 * HTML5
@@ -24,17 +22,13 @@ Designed by Viacheslav Olianishyn
 * JS/ES6
 * jQuery
 
-
-
 ## Setup
 npm i
 
 
-To-do list:
+## To-do list:
 * Add WordPress 
 * Add Hamer.js 
-
-
 
 ## Inspiration
 Designed by Viacheslav Olianishyn
