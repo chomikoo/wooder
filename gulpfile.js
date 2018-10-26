@@ -8,7 +8,7 @@ const gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 
 	imagemin = require('gulp-imagemin'),
-
+	svgo = require('gulp-svgo'),
 
 	gutil = require('gulp-util'),
 	concat = require('gulp-concat'),
@@ -105,6 +105,18 @@ gulp.task('images', () => {
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/img'))
 });
+
+
+//================
+//     SVG Optimalize
+//================
+
+gulp.task('svg', () => {
+	return gulp.src('src/svg/*.svg')
+		.pipe(svgo())
+		.pipe(gulp.dest('dist/svg'));
+});
+
 
 
 gulp.task('watch', ['browserSync', 'styles'], () => {
