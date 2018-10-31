@@ -4,7 +4,7 @@
 
 $sm: 320px;
 $md: 750px;
-$xl: 1100px;
+$xl: 1200px;
 
 // COLORS 
 
@@ -14,10 +14,13 @@ $black-bg: rgba(0, 0, 0, 0.9);
 
 
 
+$c-grey-text: #949393;
 $c-grey: #666564;
 $c-grey-bg: rgba(208, 208, 208, 0.2);
 
 $c-brown: #bea67c;
+$c-brown08: rgba(190, 166, 124, 0.8);
+$c-brown09: rgba(190, 166, 124, 0.9);
 $c-brown-bg: rgba(190, 166, 124, 0.1);
 
 
@@ -26,6 +29,8 @@ $img-shadow: 0px 0px 14.56px 1.44px rgba(0, 0, 0, 0.25);
 // TYPOGRAPHY
 $f-montserrat: 'Montserrat', sans-serif;
 $f-proxima-bold: 'Proxima-Nova-Bold', sans-serif;
+$f-proxima-reg: 'Proxima-Nova-Reg', sans-serif;
+
 
 
 

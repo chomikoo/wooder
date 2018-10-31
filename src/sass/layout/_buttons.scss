@@ -1,0 +1,105 @@
+//================
+// BTNs
+//================
+
+.btn {
+	position: relative;
+	align-items: center;
+	display: flex;
+	border: none;
+	background: none;
+
+	&--ghost {
+		border: 2px solid $white;
+		padding: 15px 50px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 14px;
+		color: $white;
+		font-family: $f-proxima-bold;
+		transition: all 0.1s ease;
+
+		svg {
+			width: 25px;
+			height: 25px;
+			margin: 0 10px 0 0;
+		}
+
+		&:hover,
+		&:focus {
+			box-shadow: 0 0 0 0 $c-brown,
+				inset 6em 4.5em 0 0 $c-brown;
+			border: 2px solid $c-brown;
+		}
+
+		@include breakpoint(sm) {
+			padding: 20px 60px;
+		}
+
+		@include breakpoint(md) {
+			padding: 15px 70px;
+		}
+	}
+
+	&--learn {
+		display: inline-block;
+		margin: 0 30px 0 0;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 14px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			width: 44px;
+			height: 2px;
+			background-color: $c-brown;
+			transition: all .3s ease-in;
+		}
+
+		&::after {
+			content: '⟶';
+			position: absolute;
+			top: 0;
+			left: calc(100% + 10px);
+			color: $c-brown;
+			transition: all .3s ease-in;
+		}
+
+		&:hover::after {
+			transform: translateX(100%);
+		}
+
+		&:hover::before {
+			width: 100%;
+		}
+
+	}
+
+	&--header {
+		margin: 0 0 65px 0;
+	}
+
+	&--play {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 65px;
+		height: 65px;
+		background-color: $c-brown08;
+		border-radius: 50%;
+
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-40%, -50%);
+			width: 25px;
+			height: 25px;
+			fill: $white;
+		}
+	}
+}

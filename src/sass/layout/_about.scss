@@ -1,0 +1,27 @@
+// ======
+// ABOUT
+// ======
+
+
+.about {
+	padding: 75px 15px;
+}
+
+
+@include breakpoint(md) {
+	.about {
+		padding: 125px 15px;
+		.row {
+			flex-direction: row-reverse;
+			justify-content: center;
+		}
+
+		&__col {
+			padding: 0 0 0 20px;
+			max-width: 250px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+}

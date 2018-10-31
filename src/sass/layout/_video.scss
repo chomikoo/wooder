@@ -1,0 +1,109 @@
+// =======
+// VIDEO
+// =======
+
+.video {
+
+	height: 100vh;
+	width: 100%;
+	padding: 25px 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+	&__container {
+		position: relative;
+		z-index: 1;
+		height: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
+		border: 1px solid $c-brown;
+		color: $c-brown;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 110%;
+			height: 110%;
+			z-index: 2;
+			@include image-bg('../../svg/play.svg', 'no-repeat', 'contain', 'right', 'bottom', '');
+
+		}
+	}
+
+	&__title {
+		position: relative;
+		text-transform: uppercase;
+		font-size: 48px;
+		letter-spacing: 4px;
+		margin: 0 0 50px 0;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(-110%, 25px);
+			width: 150px;
+			height: 2px;
+			background: $white;
+		}
+	}
+
+	&__text {
+		position: relative;
+		color: $white;
+		font-size: 15px;
+		line-height: 25px;
+		margin: 0 0 40px 0;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(-145%, 10px);
+			width: 45px;
+			height: 3px;
+			background: $c-brown;
+		}
+	}
+}
+
+
+@include breakpoint(md) {
+	.video {
+		padding: 75px 15px;
+
+
+		&__box {
+			max-width: 630px;
+			margin: 0px 0 0 200px;
+			padding: 0 0 0 70px;
+		}
+
+		&__title {
+			position: relative;
+			font-size: 38px;
+			margin: 0 0 10px 0;
+		}
+
+		&__text {
+			position: relative;
+
+		}
+	}
+}
+
+@include breakpoint(xl) {
+	.video {
+		padding: 90px 15px;
+	}
+}

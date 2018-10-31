@@ -20,23 +20,23 @@
 
 <body>
 
-    <header class="header">
+    <header class="header darken">
 
         <nav class="nav">
-            <button class="btn hamburger">
+            <button id="hamburger" class="btn hamburger" aria-label="Menu Open">
                 <span class="hamburger__bar"></span>
                 <span class="hamburger__bar"></span>
                 <span class="hamburger__bar"></span>
 
-                <!-- <span class="hamburger__text">Menu</span> -->
+                <span class="hamburger__text">Menu</span>
             </button>
 
             <a class="nav__logo" href="/">Wooder</a>
 
-            <ul class="navbar navbar--menu">
-                <li class="navbar__element"><a href="" class="navbar__link">Home</a></li>
-                <li class="navbar__element"><a href="" class="navbar__link">Products</a></li>
-                <li class="navbar__element"><a href="" class="navbar__link">About</a></li>
+            <ul id="navbar-menu" class="navbar navbar--menu">
+                <li class="navbar__element"><a href="#" class="navbar__link">Home</a></li>
+                <li class="navbar__element"><a href="#" class="navbar__link">Products</a></li>
+                <li class="navbar__element"><a href="#" class="navbar__link">About</a></li>
             </ul>
 
             <ul class="navbar navbar--info">
@@ -50,13 +50,16 @@
         <div class="header__container container">
 
             <h1 class="page-title">Wooder</h1>
-            <button class="btn btn--ghost btn--header">Learn more &#10230;</button>
-            
+
+            <button class="btn btn--ghost">Learn more &#10230;</button>
+
             <a href="#" class="ico ico--white">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.414 210.414"><path d="M105.207 0C66.532 0 35.069 31.45 35.069 70.104v70.21c0 38.653 31.463 70.1 70.138 70.1 38.675 0 70.138-31.446 70.138-70.1v-70.21C175.345 31.45 143.881 0 105.207 0zm62.345 140.314c0 34.357-27.968 62.307-62.345 62.307-34.377 0-62.345-27.95-62.345-62.307v-70.21c0-34.357 27.968-62.311 62.345-62.311 34.377 0 62.345 27.953 62.345 62.311v70.21z"/><path d="M105.207 23.379a3.896 3.896 0 0 0-3.897 3.897v35.286a3.896 3.896 0 0 0 3.897 3.897 3.896 3.896 0 0 0 3.897-3.897V27.276a3.897 3.897 0 0 0-3.897-3.897z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210.414 210.414">
+                    <path d="M105.207 0C66.532 0 35.069 31.45 35.069 70.104v70.21c0 38.653 31.463 70.1 70.138 70.1 38.675 0 70.138-31.446 70.138-70.1v-70.21C175.345 31.45 143.881 0 105.207 0zm62.345 140.314c0 34.357-27.968 62.307-62.345 62.307-34.377 0-62.345-27.95-62.345-62.307v-70.21c0-34.357 27.968-62.311 62.345-62.311 34.377 0 62.345 27.953 62.345 62.311v70.21z" />
+                    <path d="M105.207 23.379a3.896 3.896 0 0 0-3.897 3.897v35.286a3.896 3.896 0 0 0 3.897 3.897 3.896 3.896 0 0 0 3.897-3.897V27.276a3.897 3.897 0 0 0-3.897-3.897z" /></svg>
             </a>
             <div class="header__scroll"><span class="">&#10230; </span><span class="fade-text">Scroll</span></div>
-            <div class="header__text fade-text"><span>Furniture</span> & <span></span>Decor</span></div>
+            <div class="header__text text fade-text"><span>Furniture</span> & <span></span>Decor</span></div>
         </div>
 
 
@@ -66,50 +69,54 @@
 
         <section class="section furniture container">
 
-            <div class="subsection">
-
+            <div class="box box--left">
                 <div class="bg-text bg-text--tl">F</div>
-                <div class="bg-text bg-text--r">Furniture</div>
+
 
                 <div class="row">
-                    <div class="col-12 col-md-6 box box--left">
+                    <div class="col-12 col-md-6 box__col">
                         <h2 class="box__title">Furniture</h2>
-                        <div class="box__text">Wooder utilizes materials otherwise left behind, rendered useless in
+                        <div class="box__text text">Wooder utilizes materials otherwise left behind, rendered useless
+                            in
                             their original intent. By creating new pieces made of reclaimed barnwood</div>
-                        <a href="" class="btn btn--learn">Learn more &#10230;</a>
-                        <span class="box__counter">01.</span>
+                        <a href="" class="btn btn--learn">Learn more</a>
+
 
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="./img/ferniture.png" alt="Wood table" class="box__image">
+                        <img src="./img/ferniture.jpeg" alt="Wood table" class="box__image">
+                        <div class="bg-text bg-text--r">Furniture</div>
                     </div>
                 </div>
+
+                <div class="box__counter">01<span class="dot">.</span></div>
 
             </div>
 
-            <div class="subsection">
+            <div class="box box--right">
 
                 <div class="bg-text bg-text--tr">D</div>
-                <div class="bg-text bg-text--l">Decor</div>
 
                 <div class="row">
-                    <div class="col-12 col-md-6 box box--left">
-                        <h2 class="box__title">Furniture</h2>
-                        <div class="box__text">Wooder utilizes materials otherwise left behind, rendered useless in
-                            their original intent. By creating new pieces made of reclaimed barnwood</div>
-                        <a href="" class="btn btn--learn">Learn more &#10230;</a>
-                        <span class="box__counter">02.</span>
+                    <div class="col-12 col-md-6 box__col">
+                        <h2 class="box__title">Decor</h2>
+                        <div class="box__text text">We make all types of wooden decor as per design given by
+                            Architect,Interior designer, contractor which is suitable
+                            your premises. </div>
+                        <a href="" class="btn btn--learn">Learn more</a>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="./img/ferniture2.png" alt="Wood banch" class="box__image">
+                        <img src="./img/ferniture2.jpeg" alt="Wood banch" class="box__image">
+                        <div class="bg-text bg-text--l">Decor</div>
                     </div>
                 </div>
+                <div class="box__counter">02<span class="dot">.</span></div>
 
             </div>
 
         </section>
 
-        <section class="section quality">
+        <section class="section quality container">
             <h2 class="section-title">Wooder - is quality</h2>
 
             <p class="section-subtitle">We create unique design objects made of rare wood, specially under the order.
@@ -117,59 +124,68 @@
 
             <div class="row">
                 <div class="quality-card col-12 col-md">
-                    <div class="quality-card__img">
-                        <button class="btn btn--play"><span class="ico ico--play"></span></button>
+                    <div class="quality-card__img" style="background-image:url('img/tab1.png')">
+                        <button class="btn btn--play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.999 41.999">
+                                <path d="M36.068 20.176l-29-20A1 1 0 1 0 5.5.999v40a1 1 0 0 0 1.568.823l29-20a.999.999 0 0 0 0-1.646z" /></svg></button>
                     </div>
 
                     <h3 class="quality-card__title">Innovative Design</h3>
                 </div>
 
                 <div class="quality-card col-12 col-md">
-                    <div class="quality-card__img">
-                        <button class="btn btn--play"><span class="ico ico--play"></span></button>
+                    <div class="quality-card__img" style="background-image:url('img/tab2.png')">
+                        <button class="btn btn--play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.999 41.999">
+                                <path d="M36.068 20.176l-29-20A1 1 0 1 0 5.5.999v40a1 1 0 0 0 1.568.823l29-20a.999.999 0 0 0 0-1.646z" /></svg></button>
                     </div>
 
-                    <h3 class="quality-card__title">Innovative Design</h3>
+                    <h3 class="quality-card__title">High-level Skills</h3>
                 </div>
 
                 <div class="quality-card col-12 col-md">
-                    <div class="quality-card__img">
-                        <button class="btn btn--play"><span class="ico ico--play"></span></button>
+                    <div class="quality-card__img" style="background-image:url('img/tab3.png')">
+                        <button class="btn btn--play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.999 41.999">
+                                <path d="M36.068 20.176l-29-20A1 1 0 1 0 5.5.999v40a1 1 0 0 0 1.568.823l29-20a.999.999 0 0 0 0-1.646z" /></svg></button>
                     </div>
 
-                    <h3 class="quality-card__title">Innovative Design</h3>
+                    <h3 class="quality-card__title">Quality Products</h3>
                 </div>
 
             </div>
 
         </section>
 
-        <section class="section video">
-            <div class="video__container">
-                <h2 class="video__title">We do the design of any complexity</h2>
-                <p class="video__text text">This is a team of professionals that make the furniture and
-                    wood décor high standard. Creating modern designs.
-                    Adhering to the global quality standards. And we are
-                    doing work with love.</p>
-                <button class="btn btn-ghost"><span class="ico ico--boardplay"></span>Watch video</button>
+        <section class="section video darken" style="background-image: url('img/viedeobg.jpeg')">
+            <div class="video__container ">
+                <div class="video__box">
+                    <h2 class="video__title">We do the design of any complexity</h2>
+                    <p class="video__text text">This is a team of professionals that make the furniture and
+                        wood décor high standard. Creating modern designs.
+                        Adhering to the global quality standards. And we are
+                        doing work with love.</p>
+                    <button class="btn btn--ghost"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.068 314.068">
+                            <path fill="#ffffff" d="M293.002 78.53C249.646 3.435 153.618-22.296 78.529 21.068 3.434 64.418-22.298 160.442 21.066 235.534c43.35 75.095 139.375 100.83 214.465 57.47 75.096-43.365 100.84-139.384 57.471-214.474zm-73.168 187.271c-60.067 34.692-136.894 14.106-171.576-45.973C13.568 159.761 34.161 82.935 94.23 48.26c60.071-34.69 136.894-14.106 171.578 45.971 34.685 60.076 14.098 136.886-45.974 171.57zm-6.279-115.149l-82.214-47.949c-7.492-4.374-13.535-.877-13.493 7.789l.421 95.174c.038 8.664 6.155 12.191 13.669 7.851l81.585-47.103c7.506-4.332 7.522-11.388.032-15.762z" /></svg>
+                        Watch video</button>
+                </div>
             </div>
         </section>
 
 
-        <section class="section about">
+        <section class="section about container">
             <div class="bg-text bg-text--tr">A</div>
-            <div class="bg-text bg-text--l">About</div>
 
             <div class="row">
-                <div class="col-12 col-md"><img src="./img/SplitShire-7483@2x.png" alt="" class="about__img"></div>
-
-                <div class="col-12 col-md">
-                    <h2 class="about__title">About us</h2>
-                    <p class="text about__text">We are a team of professionals in the wood processing and the creation
+                <div class="col-12 col-md box__col about__col">
+                    <h2 class="box__title">About us</h2>
+                    <p class="box__text text">We are a team of professionals in the wood processing and the creation
                         of wooden furniture
                         of the highest class</p>
-                    <a href="" class="btn btn--learn">Learn more &#10230;</a>
+                    <a href="" class="btn btn--learn">Learn more</a>
 
+                </div>
+
+                <div class="col-12 col-md">
+                    <img src="./img/about.jpeg" alt="" class="box__image">
+                    <div class="bg-text bg-text--l">About</div>
                 </div>
             </div>
         </section>
@@ -177,22 +193,16 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="footer__copy">&copy; 2016 Wooder</div>
-        <a href="#top" class="logo">Wooder</a>
-        <div class="footer__design">
-            Designed by <a href="">Viacheslav Oilanshyn</a>
+    <footer class="footer darken">
+        <div class="footer__container container">
+            <div class="footer__copy">&copy; 2016 Wooder</div>
+            <a href="#top" class="footer__logo logo">Wooder</a>
+            <div class="footer__design">
+                Designed by <a class="footer__link" href="www.behance.net/Olianishyn" target="_blank">Viacheslav
+                    Oilanshyn</a>
+            </div>
         </div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ['Montserrat:400,700']
-            }
-        });
-    </script>
 
     <script src="js/script.min.js"></script>
 

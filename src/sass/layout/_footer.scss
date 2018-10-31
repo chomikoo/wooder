@@ -1,0 +1,35 @@
+// =======
+// FOOTER
+// =======
+
+.footer {
+	@include image-bg('../img/headbg1.jpeg', 'no-repeat', 'cover', 'center', 'center', '');
+
+	&__container {
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		color: $c-grey-bg;
+
+		* {
+			z-index: 1;
+		}
+	}
+
+	&__copy {}
+
+	&__logo {
+		width: 177px;
+		height: 20px;
+		@include image-bg('../img/logo.png', 'no-repeat', 'cover', 'center', 'center', '');
+
+		text-indent: -9999px;
+	}
+
+	&__link {
+		color: $c-grey;
+
+	}
+
+}

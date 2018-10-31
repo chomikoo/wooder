@@ -32,3 +32,17 @@
       src: $src;
     }
   }
+
+
+// =============================================================================
+// Cover Background
+// =============================================================================
+
+
+  @mixin image-bg($img-uri,$background-repeat:"no-repeat", $background-size:"cover", $background-x:"center", $background-y:"center", $background-attachment:"initial") {
+    background-image: url($img-uri); 
+    background-repeat: unquote($background-repeat);
+    background-size: unquote($background-size);  
+    background-attachment: unquote($background-attachment);
+    background-position: unquote($background-x) unquote($background-y);
+  }

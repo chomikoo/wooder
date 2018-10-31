@@ -20,7 +20,26 @@
 --------------------------------------------------------------*/
 @import "layout/breakpoints"; 
 @import "layout/grid";
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
 @import "layout/index";  
+@import "layout/buttons";  
+@import "layout/nav";  
+@import "layout/header";  
+@import "layout/furniture";  
+@import "layout/quality";  
+@import "layout/video";  
+@import "layout/about";  
+@import "layout/footer";  
+
+
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
 @import "layout/animations";  
 
  
